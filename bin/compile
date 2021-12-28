@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 echo "-----> Nothing to compile"
-echo "-----> pwd: $(pwd)"
 echo "-----> Downloading ffmpeg"
 curl -sSL -o ffmpeg.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
 echo "-----> Downloaded ffmpeg"
