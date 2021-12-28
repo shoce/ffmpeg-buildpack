@@ -9,8 +9,10 @@ echo "-----> Decompressing ffmpeg"
 xz -d -c ffmpeg.xz >ffmpeg
 echo "-----> Decompressed ffmpeg"
 ls -l -a
-echo "-----> Listing bin"
+echo "-----> Listing bin:"
 ls -l -a bin/
+echo "-----> Go version:"
+go version
 echo "-----> Args:" $*
 echo "-----> Env:"
 env
