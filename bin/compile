@@ -2,7 +2,8 @@
 echo "-----> Nothing to compile"
 echo "-----> Downloading and decompressing ffmpeg"
 curl -sSLO https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
-tar -x -v -f ffmpeg-release-amd64-static.tar.xz
+tar -x -f ffmpeg-release-amd64-static.tar.xz
 BuildDirPath=$1
-mv -v ffmpeg-release-*-amd64-static/ffmpeg $BuildDirPath/
+mv -v ffmpeg-*-amd64-static/ffmpeg $BuildDirPath/
+chmod 755 $BuildDirPath/ffmpeg
 echo "-----> Downloaded and decompressed ffmpeg"
