@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 echo "-----> Nothing to compile"
+pwd
 echo "-----> Downloading ffmpeg"
-curl -SL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | xz -d -c - >ffmpeg
+curl -sSL -o ffmpeg.xz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
 echo "-----> Downloaded ffmpeg"
+ls -l -a
+echo "-----> Decompressing ffmpeg"
+xz -d -c ffmpeg.xz >ffmpeg
+echo "-----> Decompressed ffmpeg"
+ls -l -a
+echo "-----> Listing whole filesystem"
+ls -l -r -a /
