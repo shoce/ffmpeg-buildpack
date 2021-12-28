@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 echo "-----> Nothing to compile"
+echo "-----> Downloading ffmpeg"
 curl -SL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz | xz -d -c - >ffmpeg
+echo "-----> Downloaded ffmpeg"
