@@ -7,14 +7,10 @@ echo "-----> Downloaded ffmpeg"
 ls -l -a
 echo "-----> Decompressing ffmpeg"
 xz -d -c ffmpeg.xz >ffmpeg
+rm -v ffmpeg.xz
 echo "-----> Decompressed ffmpeg"
-ls -l -a
-echo "-----> Listing bin:"
-ls -l -a bin/
+BuildDirPath=$1
+mv -v ffmpeg $BuildDirPath/
+
 echo "-----> Go version:"
 go version
-echo "-----> Args:" $*
-echo "-----> Env:"
-env
-echo "-----> Listing whole filesystem"
-find /
