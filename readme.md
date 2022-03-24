@@ -1,3 +1,11 @@
+# Ffmpeg Buildpack
+
+Based on Null Buildpack
+
+On Compile stage downloads a release archive from
+https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz
+and extracts `ffmpeg` binary from it.
+
 # Null Buildpack
 
 This buildpack was originally designed to run Go programs on Heroku. The idea
